@@ -55,6 +55,10 @@ remote_file_s3 '/home/ubuntu/app/my-app-19.tar' do
   action :create
 end
 
+execute 'extract_artifact' do
+  command 'tar -xf /home/ubuntu/app/my-app-19.tar -C /home/ubuntu/app'
+  action :run
+end
 
 cron 'runinng_main' do
   minute '*/1'
