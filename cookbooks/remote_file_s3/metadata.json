@@ -1,0 +1,40 @@
+{
+  "name": "remote_file_s3",
+  "description": "Provides remote_file_s3 resource",
+  "long_description": "",
+  "maintainer": "Matt Kulka",
+  "maintainer_email": "matt@lqx.net",
+  "license": "MIT",
+  "platforms": {
+    "debian": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "windows": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "mac_os_x": ">= 0.0.0"
+  },
+  "dependencies": {
+
+  },
+  "providing": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "2.0.0",
+  "source_url": "https://github.com/mattlqx/cookbook-remote_file_s3",
+  "issues_url": "https://github.com/mattlqx/cookbook-remote_file_s3/issues",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 15.3"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ],
+  "eager_load_libraries": true
+}
