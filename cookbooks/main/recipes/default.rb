@@ -25,10 +25,17 @@ apt_package "python3-flask" do
         action :install
 end
 
-git '/home/ubuntu/app' do
-        repository 'https://github.com/tmoshe/CloudSchool.git'
-        revision 'main'
-        action :sync
+#git '/home/ubuntu/app' do
+#        repository 'https://github.com/tmoshe/CloudSchool.git'
+#        revision 'main'
+#        action :sync
+#end
+
+directory '/home/ubuntu/app' do
+  owner 'root'
+  group 'root'
+  mode '0777'
+  action :create
 end
 
 execute "run-flask-apk"  do
