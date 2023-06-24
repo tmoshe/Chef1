@@ -56,7 +56,7 @@ remote_file_s3 '/home/ubuntu/app/my-app-19.tar' do
 end
 
 execute 'extract_artifact' do
-  command 'tar -xf /home/ubuntu/app/my-app-21.tar -C /home/ubuntu/app'
+  command 'tar -xf /home/ubuntu/app/my-app-19.tar -C /home/ubuntu/app'
   action :run
 end
 
